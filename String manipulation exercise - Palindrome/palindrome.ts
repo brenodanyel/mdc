@@ -4,7 +4,18 @@
 // differentiating between case and emergency letters.
 
 function isPalindrome(word: string): boolean {
-	return word === word.split('').reverse().join('');
+	const input = word.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+	const output = word
+		.split('')
+		.reverse()
+		.join('')
+		.toLowerCase()
+		.replace(/[^a-z0-9]/g, '');
+
+	return input === output;
 }
 
-console.log(isPalindrome('ana'));
+console.log(isPalindrome('Socorram-me, Subi no ônibus em Marrocos')); // true
+console.log(isPalindrome('Ana')); // true
+console.log(isPalindrome('AnaA')); // false
