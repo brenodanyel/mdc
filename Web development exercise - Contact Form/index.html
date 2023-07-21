@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+		<script src="./index.js"></script>
+	</head>
+	<body>
+		<main>
+			<h1>Test Form</h1>
+
+			<form action="#" method="post" id="test-form">
+				<label for="name">
+					Name
+					<input type="text" name="name" id="name" required />
+				</label>
+
+				<label for="email">
+					Email
+					<input type="email" name="email" id="email" required />
+				</label>
+
+				<label for="subject">
+					Subject
+					<input type="text" name="subject" id="subject" required />
+				</label>
+
+				<label for="message">
+					Message
+					<textarea name="message" id="message" cols="30" rows="10">
+					</textarea>
+				</label>
+
+				<input type="submit" value="Send" />
+			</form>
+
+			<div id="response"></div>
+		</main>
+	</body>
+</html>

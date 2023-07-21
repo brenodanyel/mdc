@@ -1,0 +1,22 @@
+body {
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+main {
+	width: min(100%, 400px);
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5em;
+}
+
+label {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25em;
+}
