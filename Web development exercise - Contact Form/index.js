@@ -22,18 +22,22 @@ window.onload = function () {
 
 		if (name.length < 3) {
 			alert('Name must have at least 3 characters');
+			return
 		}
 
 		if (!validateEmail(email)) {
 			alert('Email must be a valid email address');
+			return
 		}
 
 		if (subject.length < 3) {
 			alert('Subject must have at least 3 characters');
+			return
 		}
 
 		if (message.length < 5) {
 			alert('Message must have at least 5 characters');
+			return
 		}
 
 		response.innerHTML = `
